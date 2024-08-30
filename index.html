@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inscripción - MOL Free Fire</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url(https://images.app.goo.gl/HaPefWs9jfvPpxKk8;
+            background-size: cover;
+            color: #fff;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        .info {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .print-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: #fff;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+        .print-btn:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Formulario de Inscripción - MOL Free Fire</h1>
+        <div class="info">
+            <p><strong>Evento:</strong> MOL Free Fire</p>
+            <p><strong>Fecha:</strong> 29 de septiembre</p>
+            <p><strong>Premio:</strong> 4 millones de pesos</p>
+            <p><strong>Patrocinadores:</strong> La Corona 👑 y For Fonseca</p>
+            <p><strong>Transmisión:</strong> Team Corona</p>
+            <p>Para imprimir el formulario, haz clic en el botón de abajo.</p>
+            <a href="#" onclick="window.print();" class="print-btn">Imprimir Formulario</a>
+            <p>enviar  el formulario completado a <strong>kemarquez26@gmail.com</strong></p>
+        </div>
+        <form action="mailto:kemarquez26@gmail.com" method="post" enctype="text/plain">
+            <div class="form-group">
+                <label for="team-name">Nombre del Clan:</label>
+                <input type="text" id="team-name" name="team-name" required>
+            </div>
+            <div class="form-group">
+                <label for="captain-name">Nombre del Capitán:</label>
+                <input type="text" id="captain-name" name="captain-name" required>
+            </div>
+            <div class="form-group">
+                <label for="contact-email">Correo Electrónico:</label>
+                <input type="email" id="contact-email" name="contact-email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone-number">Número de Teléfono:</label>
+                <input type="tel" id="phone-number" name="phone-number" required>
+            </div>
+            <div class="form-group">
+                <label for="team-members">Número de Miembros del Clan:</label>
+                <input type="number" id="team-members" name="team-members" required>
+            </div>
+            <button type="submit" class="btn">luego de llenar formulario lo descarga y envias el correo</button>
+        </form>
+    </div>
+</body>
+</html>
